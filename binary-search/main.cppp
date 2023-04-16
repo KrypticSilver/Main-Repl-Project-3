@@ -8,10 +8,10 @@ int main() {
   vector<int> array = {1, 2, 1, 9, 4, 7, 3, 6};
 
   int searchValue = 7;
-  int midPoint = (array.size() - 1) / 2;
+  int midPoint = array.size()
 
-  cout << midPoint;
+  while (true) {
     
-  
+  }
   
 }

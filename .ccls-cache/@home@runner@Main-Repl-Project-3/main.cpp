@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+
+  //array must be sorted for binary search to work
+  vector<int> array = {1, 2, 4, 7, 10, 23, 24};
+
+  int searchValue = 7;
+  int midPoint = (array.size() - 1) / 2;
+
+  while (true) {
+    int numMidPoint = array[midPoint];
+
+    if (numMidPoint == searchValue) {
+      cout << "The value is at index " << midPoint;
+    } else if (searchValue > numMidPoint) {
+      array = 
+    }
+    
+  }
+    
+  
+  
+}
