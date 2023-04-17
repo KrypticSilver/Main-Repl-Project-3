@@ -3,25 +3,29 @@
 
 using namespace std;
 
-int main() {
+int fib(int n) {
+  int sum = 0;
+  int a = 0;
+  int b = 1;
+  int c = 1;
 
-  //array must be sorted for binary search to work
-  vector<int> array = {1, 2, 4, 7, 10, 23, 24};
+  for (int i = 0; i < n; i++) {
+    a = b;
+    b = c;
+    c = a + b;
 
-  int searchValue = 7;
-  int midPoint = (array.size() - 1) / 2;
-
-  while (true) {
-    int numMidPoint = array[midPoint];
-
-    if (numMidPoint == searchValue) {
-      cout << "The value is at index " << midPoint;
-    } else if (searchValue > numMidPoint) {
-      array = 
-    }
+    sum += c;
+    
     
   }
-    
-  
-  
+
+  return sum;
+}
+
+int main() {
+
+  int n 2 ;
+
+  cout << fib(n) << fib(n + 1) << fib(n + 2);
+
 }
