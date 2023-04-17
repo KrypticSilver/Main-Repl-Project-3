@@ -9,7 +9,7 @@ int main() {
   int key = 1851;
 
   for (int i = 0; i < sentence.size(); i++) {
-    sentence[i] = sentence[i]
+    sentence[i] = sentence[i];
   }
   
 }
