@@ -1,21 +1,37 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
-/* 
-Constraint ideas:
-- String:
-- - Length(min and max)
-- - Characters used
-- - - Capital letters
-- - - Symbols
-- - 
-- Number
-- - Range of values
-- - Decimal values
-*/
+int main () {
+  srand((unsigned) time(NULL));
 
-int main() {
-  
+  int lineLength = 38;
+  int height = 23;
+  int randomRange = 14;
+
+  vector<char> allTextures = {'@', '#', 'o', '$', 'a', '*'};
+
+
+  for (int i = 0; i <= height; i++) {
+    char defaultFill = allTextures[rand() % allTextures.size()];
+    int lineTotal = 0;
+    string line;
+
+    while (lineTotal < lineLength - randomRange) {
+      int count = 1 + rand() % randomRange;
+      char texture = allTextures[rand() % allTextures.size()];
+
+      line += string(count, texture);
+
+      lineTotal += count;
+    }
+
+    line += string(lineLength - lineTotal, defaultFill);
+
+    cout << line << "\n";
+
+    
+  }
 }

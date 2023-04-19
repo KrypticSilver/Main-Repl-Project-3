@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  int sideLength = 20;
+  int sideThickness = 10;
+  int halfLength = sideLength / 2;
+
+  for (int i = 0; i <= halfLength; i++) {
+    cout << 
+    string(i, ' ') 
+    << string(sideThickness, '#') <<
+    string((halfLength - i) * 2, ' ')
+    << string(sideThickness, '#') <<
+    string(i, ' ')
+    << "\n";
+  }
+
+  for (int i = halfLength; i >= 0; i--) {
+    cout << 
+    string(i, ' ') 
+    << string(sideThickness, '#') <<
+    string((halfLength - i) * 2, ' ')
+    << string(sideThickness, '#') <<
+    string(i, ' ')
+    << "\n";
+  }
+  
+  
