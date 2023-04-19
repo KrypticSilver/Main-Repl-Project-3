@@ -1,0 +1,11 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  float radius = 3.7;
+
+  cout << "Area is: " << 3.14159265 * radius * radius << " units^2";
+  
+}
