@@ -1,0 +1,13 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  cout << "Do you want to be naughts or crosses?\n[Type n for naughts, c for crosses]\n\nyour choice -->: ";
+
+  char choice;
+  
+  cin >> choice;
+  
+}
