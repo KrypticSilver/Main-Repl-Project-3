@@ -1,1 +1,8 @@
 - Make a noise that uses binomial distribution
+
+Types of noise in nature:
+- Static
+- Turbulence
+- Convection + turbulence
+- Random
+- Random - selection criteria e.g. venifacts
