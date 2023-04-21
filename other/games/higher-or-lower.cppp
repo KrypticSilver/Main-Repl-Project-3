@@ -1,0 +1,33 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+  srand((unsigned) time(NULL));
+  
+  int guess;
+  int num = 1 + rand() % 100;
+
+  while (true) {
+    
+
+    cout << "What is your gues,s for the random number?\n\n: ";
+    cin >> guess;
+
+    if (guess == num) {
+      cout << "Correct! The number was " << num;
+      break;
+    } else if (guess > num) {
+      cout << "Lower...\n";
+      continue;
+      
+    } else if (guess < num) {
+      cout << "Higher...\n";
+      continue;
+      
+    }
+  }
+  
+}
