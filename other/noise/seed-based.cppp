@@ -1,0 +1,54 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+bool presenceCheck(vector<int> array, int value) {
+  for (int i : array) {
+    if (i == value) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+int main() {
+  srand((unsigned) time(NULL));
+  
+  int numOfSeeds = 16;
+  int lineWidth = 38;
+  int height = 25;
+  vector<int> seeds[2][16];
+
+  vector<int> yolo = {1, 2, 1, 1, 1};
+
+  for (int i = 0; i < numOfSeeds; i++) {
+    while (true) {
+      int seedX = rand() % lineWidth;
+      if (presenceCheck(seeds[0], seedX) == false) {
+        break;
+      } else {
+        continue;
+      }
+      
+    }
+
+    while (true) {
+      int seedY = rand() % height;
+      if (presenceCheck(seeds[1], seedY) == false) {
+        break;
+      } else {
+        continue;
+      }
+      
+    }
+    
+    //seeds.push_back({seedX, seedY});
+
+    
+  }
+
+  cout << presenceCheck(yolo, 6);
+  
+}

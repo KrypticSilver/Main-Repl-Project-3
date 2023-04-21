@@ -4,10 +4,10 @@
 using namespace std;
 
 int main() {
-  int numOfSeeds = 16;
-  int lineWidth = 38;
-  int height = 25;
+  vector<int> array[2][16];
 
-  int seeds[numOfSeeds][2];
+  for (int i = 0; i < array[1].size(); i++) {
+    cout << array[1][i];
+  }
   
 }
