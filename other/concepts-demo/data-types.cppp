@@ -1,0 +1,14 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  int num = 81;
+  bool decision = true;
+  float rounding = 7.13;
+  double preciseRounding = 7.38159859185915819581;
+  string name = "tony";
+  char favouriteLetter = 'x';
+  
+}

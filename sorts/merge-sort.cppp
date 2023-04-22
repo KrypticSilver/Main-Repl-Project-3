@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> merge(vector<int> arr) {
+  if (arr.size() > 2) {
+    
+  }
+  
+}
+
+int main() {
+  vector<int> array = {1, 8, 9, 3, 2, 1, 6, 7, 4, 8};
+  
+  
+}

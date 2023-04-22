@@ -4,10 +4,14 @@
 using namespace std;
 
 int main() {
-  vector<int> array[2][16];
+  string word = "hello";
+  string reversedWord;
 
-  for (int i = 0; i < array[1].size(); i++) {
-    cout << array[1][i];
+  for (int i = word.size(); i >= 0; i--) {
+    reversedWord.push_back(word[i]);
+    
   }
+
+  cout << reversedWord;
   
 }

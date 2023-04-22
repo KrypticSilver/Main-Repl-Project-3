@@ -1,0 +1,25 @@
+//unfinished
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  string word1;
+  string word2;
+
+  for (char letter1 : word1) {
+    int instances;
+    
+    for (char letter2 : word2) {
+      if (letter1 == letter2) {
+        instances += 1;
+      }
+      
+    }
+    if (instances != 1) {
+      cout << "The words are not anagrams";
+    }
+  }
+  
+}
