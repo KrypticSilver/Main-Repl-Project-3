@@ -4,5 +4,8 @@
 using namespace std;
 
 int main() {
+  vector<int> matrix1 = {{1, 5, 3}, {8, 2, 4}};
+  vector<int> matrix2 = {{9, 7, 8}, {6, 3, 1}};
+  
   
 }
